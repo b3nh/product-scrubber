@@ -1,0 +1,21 @@
+{
+  "name": "product-scrubber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "b3nh",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "@types/node": "^16.9.6",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "rollup-plugin-copy": "^3.4.0"
+  }
+}

@@ -1,6 +1,6 @@
 # ProductScrubber
 
-A simple React component (written with Typescript) that allows users to scrub through product images by hovering their mouse.
+A simple React component (written with Typescript) that allows users to scrub through images with their mouse.
 
 - Can take a large amount of images, although recommend no more than 16
 - Set `showHoverGrid` as `true` to show red image hover areas / edit mode
@@ -13,7 +13,7 @@ A simple React component (written with Typescript) that allows users to scrub th
   <img style='width: 320px' src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example-grid.gif?raw=true'>
 </p>
 
-## Installation
+## Installation &amp; Usage
 
 If you just want to install the module for use within your React project, simply go to the <a href='https://www.npmjs.com/package/product-scrubber'>ProductScrubber npm page</a> or run one of the following commands:
 
@@ -32,13 +32,7 @@ yarn add product-scrubber --save
 Alternatively, the following instructions are for local development, contributions and publishing of the `ProductScrubber` module.
 
 ```
-yarn
-```
-
-## Usage
-
-```
-yarn storybook
+yarn & yarn storybook
 ```
 
 <p float="left">
@@ -61,21 +55,18 @@ type ProductScrubberTypes = {
 
 ```ts
 // example use
-{
-  <ProductScrubber
-    onClickItem={onClickProductScrubber}
-    data={exampleData}
-    width={420}
-    height={420}
-  />;
-}
+<ProductScrubber
+  onClickItem={onClickProductScrubber}
+  data={exampleData}
+  width={420}
+  height={420}
+/>
 ```
 
 Here is a quick example to get started:
 
 ```ts
 // App.tsx
-
 import React from 'react';
 import { ProductScrubber } from 'product-scrubber';
 
@@ -140,8 +131,4 @@ npm publish
 
 ```
 yarn test
-```
-
-```
-
 ```

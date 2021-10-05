@@ -1,6 +1,6 @@
 # ProductScrubber
 
-A simple React component (written with Typescript) that allows users to scrub through product images by hovering their mouse.
+A simple React component (written with Typescript) that allows users to scrub through images with their mouse.
 
 - Can take a large amount of images, although recommend no more than 16
 - Set `showHoverGrid` as `true` to show red image hover areas / edit mode
@@ -43,21 +43,18 @@ type ProductScrubberTypes = {
 
 ```ts
 // example use
-{
-  <ProductScrubber
-    onClickItem={onClickProductScrubber}
-    data={exampleData}
-    width={420}
-    height={420}
-  />;
-}
+<ProductScrubber
+  onClickItem={onClickProductScrubber}
+  data={exampleData}
+  width={420}
+  height={420}
+/>
 ```
 
 Here is a quick example to get started:
 
 ```ts
 // App.tsx
-
 import React from 'react';
 import { ProductScrubber } from 'product-scrubber';
 

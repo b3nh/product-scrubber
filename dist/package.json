@@ -1,10 +1,19 @@
 {
   "name": "product-scrubber",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  "author": "b3nh",
+  "author": "@b3nh",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b3nh/product-scrubber"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "component"
+  ],
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"

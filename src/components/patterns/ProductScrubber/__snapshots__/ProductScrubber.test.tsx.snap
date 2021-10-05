@@ -7,6 +7,7 @@ Object {
     <div>
       <div
         class="product-scrubber-container product-scrubber-container-loading"
+        style="width: 100%; height: 100%;"
       >
         <div
           class="child-container"
@@ -48,6 +49,7 @@ Object {
   "container": <div>
     <div
       class="product-scrubber-container product-scrubber-container-loading"
+      style="width: 100%; height: 100%;"
     >
       <div
         class="child-container"

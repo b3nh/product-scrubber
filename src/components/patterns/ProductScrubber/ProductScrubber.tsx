@@ -16,6 +16,8 @@ type ProductScrubberTypes = {
   showHoverGrid?: boolean,
   hideName?: boolean,
   hideId?: boolean,
+  width?: string | number,
+  height?: string | number,
 } & typeof defaultProps;
 
 const defaultProps = {
@@ -24,6 +26,8 @@ const defaultProps = {
   showHoverGrid: false,
   hideName: false,
   hideId: false,
+  width: '100%',
+  height: '100%',
 };
 
 const ProductScrubber = (props: ProductScrubberTypes) => {
@@ -34,6 +38,8 @@ const ProductScrubber = (props: ProductScrubberTypes) => {
     showHoverGrid,
     hideName,
     hideId,
+    width,
+    height,
   } = props;
 
   const [loading, setLoading] = useState(true);
@@ -73,7 +79,10 @@ const ProductScrubber = (props: ProductScrubberTypes) => {
   }, []);
 
   return (
-    <div className={`product-scrubber-container ${loading ? 'product-scrubber-container-loading' : 'product-scrubber-container-active'}`}>
+    <div
+      className={`product-scrubber-container ${loading ? 'product-scrubber-container-loading' : 'product-scrubber-container-active'}`}
+      style={{ width, height }}
+    >
       <div className="child-container">
         {children}
       </div>

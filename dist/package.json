@@ -1,7 +1,7 @@
 {
   "name": "product-scrubber",
-  "version": "1.0.4",
-  "description": "",
+  "version": "1.0.5",
+  "description": "A simple React component (written with Typescript) that allows users to scrub through images with their mouse.",
   "main": "index.js",
   "author": "@b3nh",
   "license": "MIT",

@@ -15,7 +15,6 @@ A simple React component (written with Typescript) that allows users to scrub th
 
 ## Installation
 
-<hr />
 If you just want to install the module for use within your React project, simply go to the <a href='https://www.npmjs.com/package/product-scrubber'>ProductScrubber npm page</a> or run one of the following commands:
 
 ```
@@ -37,8 +36,6 @@ yarn
 ```
 
 ## Usage
-
-<hr />
 
 ```
 yarn storybook
@@ -62,7 +59,7 @@ type ProductScrubberTypes = {
 };
 ```
 
-````ts
+```ts
 // example use
 {
   <ProductScrubber
@@ -129,11 +126,9 @@ function App() {
 }
 
 export default App;
-````
+```
 
 ## Deployment
-
-<hr />
 
 ```
 yarn dist
@@ -143,8 +138,10 @@ npm publish
 
 ## Testing
 
-<hr />
-
 ```
 yarn test
+```
+
+```
+
 ```

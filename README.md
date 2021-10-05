@@ -43,7 +43,7 @@ yarn & yarn storybook
 // types
 type ProductScrubberTypes = {
   children?: any;
-  onClickItem?: (activeId: string) => void; // required
+  onClickItem?: (activeId: string) => void;
   data: Array<dataType>; // required
   showHoverGrid?: boolean;
   hideName?: boolean;

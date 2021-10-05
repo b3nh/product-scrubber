@@ -1,7 +1,5 @@
 # ProductScrubber
 
-GitHub: https://github.com/b3nh/product-scrubber
-<br />
 npm: https://www.npmjs.com/package/product-scrubber
 <br /><br />
 A simple React component, written using Typescript that allows users to scrub through product images by hovering their mouse.

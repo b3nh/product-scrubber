@@ -8,19 +8,27 @@ https://www.npmjs.com/package/product-scrubber
 
 ## Installation
 
+<hr />
+
 ```
-yarn
+npm i product-scrubber --save
+```
+
+OR
+
+```
+yarn add product-scrubber --save
 ```
 
 ## Usage
 
-```
-yarn storybook
-```
-
+<hr />
 Here is a quick example to get started:
 
 ```ts
+// App.tsx
+
+import React from 'react';
 import { ProductScrubber } from 'product-scrubber';
 
 const exampleData = [
@@ -51,13 +59,23 @@ const exampleData = [
   },
 ];
 
-const onClickProductScrubber = (data: string) => {
-  console.log(data);
-};
+function App() {
+  const onClickProductScrubber = (id: string) => {
+    alert(id);
+    console.log(id);
+  };
 
-<ProductScrubber
-  onClickItem={onClickProductScrubber}
-  data={exampleData}
-  width={350}
-/>;
+  return (
+    <div className="App">
+      <ProductScrubber
+        onClickItem={onClickProductScrubber}
+        data={exampleData}
+        width={420}
+        height={420}
+      />
+    </div>
+  );
+}
+
+export default App;
 ```

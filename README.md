@@ -12,17 +12,13 @@ A simple React component, written using Typescript that allows users to scrub th
 - Hide product name &amp; id with `hideName` &amp; `hideId`
 - Pass child components to overlay your own custom UI `<ProductScrubber> {...} </ProductScrubber>`
 
-<br /><br />
-
 <div style='display: inline'>
-  <img src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example.gif?raw=true'>
+  <img style='width: 300px' src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example.gif?raw=true'>
 </div>
 
 <div style='display: inline'>
-  <img src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example-grid.gif?raw=true'>
+  <img style='width: 300px' src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example-grid.gif?raw=true'>
 </div>
-
-<br /><br />
 
 ## Installation
 
@@ -30,15 +26,11 @@ A simple React component, written using Typescript that allows users to scrub th
 yarn
 ```
 
-<br />
-
 ## Testing
 
 ```
 yarn test
 ```
-
-<br />
 
 ## Usage
 
@@ -50,7 +42,7 @@ yarn storybook
   <img src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/storybook.png?raw=true'>
 </div>
 
-<br /><br />
+<br />
 
 ## Project installation
 

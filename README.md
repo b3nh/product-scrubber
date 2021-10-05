@@ -1,10 +1,28 @@
 # ProductScrubber
 
-https://www.npmjs.com/package/product-scrubber
+GitHub: https://github.com/b3nh/product-scrubber
+<br />
+npm: https://www.npmjs.com/package/product-scrubber
+<br /><br />
+A simple React component, written using Typescript that allows users to scrub through product images by hovering their mouse.
 
-![example](https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example.gif?raw=true)
+- Can take a large amount of images, although recommend no more than 16
+- Set `showHoverGrid` as `true` to show red image hover areas / edit mode
+- Can adjust `width` &amp; `height`, otherwise default will expand to fix `100%` of parent container
+- Hide product name &amp; id with `hideName` &amp; `hideId`
+- Pass child components to overlay your own custom UI `<ProductScrubber> {...} </ProductScrubber>`
 
-![example](https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example-grid.gif?raw=true)
+<br /><br />
+
+<div style='display: inline'>
+  <img src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example.gif?raw=true'>
+</div>
+
+<div style='display: inline'>
+  <img src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example-grid.gif?raw=true'>
+</div>
+
+<br /><br />
 
 ## Installation
 
@@ -12,54 +30,28 @@ https://www.npmjs.com/package/product-scrubber
 yarn
 ```
 
+<br />
+
+## Testing
+
+```
+yarn test
+```
+
+<br />
+
 ## Usage
 
 ```
 yarn storybook
 ```
 
-![example](https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/storybook.png?raw=true)
+<div style='display: inline'>
+  <img src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/storybook.png?raw=true'>
+</div>
 
-Here is a quick example to get started:
+<br /><br />
 
-```ts
-import { ProductScrubber } from 'product-scrubber';
+## Project installation
 
-const exampleData = [
-  {
-    id: 'EXAMPLE-ID-001: side',
-    name: "MEN'S SPEED LACE-UP SNEAKER IN BLACK",
-    default: true,
-    imagePath:
-      'https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/side.jpg?raw=true',
-  },
-  {
-    id: 'EXAMPLE-ID-001: front',
-    name: "MEN'S SPEED LACE-UP SNEAKER IN BLACK",
-    imagePath:
-      'https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/front.jpg?raw=true',
-  },
-  {
-    id: 'EXAMPLE-ID-001: back',
-    name: "MEN'S SPEED LACE-UP SNEAKER IN BLACK",
-    imagePath:
-      'https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/back.jpg?raw=true',
-  },
-  {
-    id: 'EXAMPLE-ID-001: top',
-    name: "MEN'S SPEED LACE-UP SNEAKER IN BLACK",
-    imagePath:
-      'https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/top.jpg?raw=true',
-  },
-];
-
-const onClickProductScrubber = (data: string) => {
-  console.log(data);
-};
-
-<ProductScrubber
-  onClickItem={onClickProductScrubber}
-  data={exampleData}
-  width={350}
-/>;
-```
+https://github.com/b3nh/product-scrubber/blob/master/dist/README.md

@@ -1,14 +1,30 @@
 # ProductScrubber
 
-https://www.npmjs.com/package/product-scrubber
+GitHub: https://github.com/b3nh/product-scrubber
+<br />
+npm: https://www.npmjs.com/package/product-scrubber
+<br /><br />
+A simple React component, written using Typescript that allows users to scrub through product images by hovering their mouse.
 
-![example](https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example.gif?raw=true)
+- Can take a large amount of images, although recommend no more than 16
+- Set `showHoverGrid` as `true` to show red image hover areas / edit mode
+- Can adjust `width` &amp; `height`, otherwise default will expand to fix `100%` of parent container
+- Hide product name &amp; id with `hideName` &amp; `hideId`
+- Pass child components to overlay your own custom UI `<ProductScrubber> {...} </ProductScrubber>`
 
-![example](https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example-grid.gif?raw=true)
+<br /><br />
+
+<div style='display: inline'>
+  <img src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example.gif?raw=true'>
+</div>
+
+<div style='display: inline'>
+  <img src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example-grid.gif?raw=true'>
+</div>
+
+<br /><br />
 
 ## Installation
-
-<hr />
 
 ```
 npm i product-scrubber --save
@@ -22,7 +38,19 @@ yarn add product-scrubber --save
 
 ## Usage
 
-<hr />
+```ts
+type ProductScrubberTypes = {
+  children?: any;
+  onClickItem?: (activeId: string) => void;
+  data: Array<dataType>;
+  showHoverGrid?: boolean;
+  hideName?: boolean;
+  hideId?: boolean;
+  width?: string | number;
+  height?: string | number;
+};
+```
+
 Here is a quick example to get started:
 
 ```ts

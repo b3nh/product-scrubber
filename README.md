@@ -18,6 +18,8 @@ yarn
 yarn storybook
 ```
 
+![example](https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/storybook.png?raw=true)
+
 Here is a quick example to get started:
 
 ```ts

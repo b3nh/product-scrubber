@@ -8,10 +8,7 @@ A simple React component (written with Typescript) that allows users to scrub th
 - Hide product name &amp; id with `hideName` &amp; `hideId`
 - Pass child components to overlay your own custom UI `<ProductScrubber> {...} </ProductScrubber>`
 
-<p float="left">
-  <img style='width: 320px' src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example.gif?raw=true'>
-  <img style='width: 320px' src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example-grid.gif?raw=true'>
-</p>
+<img src='https://github.com/b3nh/product-scrubber/blob/master/src/stories/assets/example.gif?raw=true'>
 
 ## Installation
 
